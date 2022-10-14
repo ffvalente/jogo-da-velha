@@ -13,9 +13,9 @@ char map[3][3] = {{' ',' ',' '},
                   {' ',' ',' '},};
 
 
-int posL, posC;  // Linha e Coluna
+int posL, posC;  
 int jogador = 0; // 0 = Jogador O e 1 = Jogador X
-int loop = 1;    // loop = 0 fim do while
+int loop = 1;   
 
 int main(int argc, char const *argv[])
 {
@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
 
 void tela(){
 
-    limpaTela(); // para função funcionar, vai depender do sistema operacional utilizado, melhor explicação na linha 59
+    limpaTela(); // para funÃ§Ã£o funcionar, vai depender do sistema operacional utilizado, melhor explicaÃ§Ã£o na linha 59
 
     printf("  0 1 2\n");
 
@@ -79,7 +79,7 @@ void jogada(){
             jogada();
         }
 
-        if(posL >=0 && posL <= 2 && posC >= 0 && posC <= 2){ //validando se o número é de 0 a 2
+        if(posL >=0 && posL <= 2 && posC >= 0 && posC <= 2){ //validando se o nÃºmero Ã© de 0 a 2
             validarJogada();
         }else{
             printf("\Apenas numeros de 0 a 2 sao validos, Digite novamente!\n");
@@ -88,7 +88,7 @@ void jogada(){
 
 }
 
-void validarJogada(){        //validando posição para mudar de jogador
+void validarJogada(){        //validando posiÃ§Ã£o para mudar de jogador
 
     if(map[posL][posC] == ' '){
         if(jogador == 0){
